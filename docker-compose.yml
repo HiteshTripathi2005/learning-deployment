@@ -1,0 +1,7 @@
+services:
+  app:
+    image: ${ECR_REGISTRY}/${ECR_REPOSITORY}:latest
+    env_file: .env
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
