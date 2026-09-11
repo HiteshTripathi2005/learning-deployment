@@ -3,6 +3,10 @@ set -euo pipefail
 
 cd /opt/learning-deployment
 
+set -a
+source .env
+set +a
+
 echo "Logging in to ECR..."
 aws ecr get-login-password --region "$AWS_REGION" | docker login --username AWS --password-stdin "$ECR_REGISTRY"
 
