@@ -1,0 +1,26 @@
+{
+  "name": "fastify-boilerplate",
+  "version": "1.0.0",
+  "description": "Production-ready Fastify boilerplate with Hello World and Server Status APIs",
+  "type": "module",
+  "main": "src/server.js",
+  "scripts": {
+    "dev": "node --watch src/server.js",
+    "start": "node src/server.js",
+    "test": "node --test"
+  },
+  "keywords": [
+    "fastify",
+    "boilerplate",
+    "deployment",
+    "api",
+    "healthcheck"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fastify/cors": "^10.0.2",
+    "dotenv": "^16.4.7",
+    "fastify": "^5.2.1"
+  }
+}
