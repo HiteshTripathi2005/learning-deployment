@@ -21,7 +21,7 @@ export default async function rootRoutes(fastify) {
       },
     },
     async (request, reply) => {
-      return { message: 'Hello, World!' };
+      return { message: 'Hello, Earth!' };
     }
   );
 }
